@@ -12,7 +12,7 @@ v = [-12;
      0;
      0];
 
-i_mesh = Z\v;
+i_mesh = inv(Z)*v;
 
 V_c = (i_mesh(3) - i_mesh(2))*(-3i);
 
